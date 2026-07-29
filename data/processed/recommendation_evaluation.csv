@@ -1,0 +1,2 @@
+n_weak_pairs,n_strong_pairs,weak_train_acc,weak_test_acc,strong_train_acc,strong_test_acc,weak_improvement
+1117,2399,0.2955,0.5438,0.696,0.595,0.2483

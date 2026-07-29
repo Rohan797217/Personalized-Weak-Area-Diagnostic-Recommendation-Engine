@@ -1,0 +1,7 @@
+metric,comparison,pearson_r,pearson_p,spearman_r,spearman_p,n_students,n_questions
+Weighted Accuracy (Quantitative Aptitude),vs _skill_quant,0.5515,0.0,0.5851,0.0,600.0,
+Weighted Accuracy (Logical Reasoning),vs _skill_lr,0.5146,0.0,0.5352,0.0,600.0,
+Weighted Accuracy (Verbal Ability),vs _skill_va,0.5259,0.0,0.5494,0.0,599.0,
+Weighted Accuracy (Data Interpretation),vs _skill_di,0.4083,0.0,0.4391,0.0,595.0,
+IRT Ability (overall),vs avg ground truth skill,0.5624,0.0,0.5905,0.0,600.0,
+IRT Question Difficulty,vs true_correct_prob,0.5071,0.0,0.4933,0.0,,10499.0
