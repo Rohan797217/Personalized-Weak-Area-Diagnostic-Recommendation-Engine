@@ -49,56 +49,59 @@ st.markdown("""
     /* Global styles */
     .stApp {
         font-family: 'Inter', sans-serif;
+        background-color: #f8fafc;
     }
 
     /* Main header */
     .main-header {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
         padding: 2rem 2.5rem;
         border-radius: 16px;
         color: white;
         margin-bottom: 2rem;
-        box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+        box-shadow: 0 10px 40px rgba(79, 70, 229, 0.25);
     }
     .main-header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: 800;
         margin: 0;
         letter-spacing: -0.5px;
+        color: #ffffff;
     }
     .main-header p {
-        font-size: 1rem;
-        opacity: 0.9;
+        font-size: 1.1rem;
+        opacity: 0.95;
         margin-top: 0.5rem;
+        color: #e0e7ff;
     }
 
     /* Metric cards */
     .metric-card {
-        background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
-        border: 1px solid rgba(255,255,255,0.08);
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
         padding: 1.5rem;
         border-radius: 14px;
         text-align: center;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.04);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
     .metric-card:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
     }
     .metric-value {
         font-size: 2.2rem;
         font-weight: 800;
-        background: linear-gradient(135deg, #667eea, #764ba2);
+        background: linear-gradient(135deg, #4f46e5, #7c3aed);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
     .metric-label {
         font-size: 0.85rem;
-        color: #8892b0;
+        color: #64748b;
         margin-top: 0.3rem;
-        font-weight: 500;
+        font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
@@ -107,15 +110,16 @@ st.markdown("""
     .section-header {
         font-size: 1.4rem;
         font-weight: 700;
-        color: #ccd6f6;
+        color: #1e293b;
         margin: 2rem 0 1rem 0;
         padding-bottom: 0.5rem;
-        border-bottom: 2px solid rgba(102, 126, 234, 0.3);
+        border-bottom: 2px solid #e0e7ff;
     }
 
     /* Sidebar */
     section[data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #0a0a1a 0%, #1a1a2e 100%);
+        background-color: #ffffff;
+        border-right: 1px solid #e2e8f0;
     }
 
     /* Hide default streamlit branding */
@@ -131,6 +135,16 @@ st.markdown("""
         border-radius: 8px;
         padding: 10px 20px;
         font-weight: 600;
+        color: #64748b;
+    }
+    .stTabs [aria-selected="true"] {
+        color: #4f46e5 !important;
+        background-color: #e0e7ff;
+    }
+    
+    /* Text colors for standard markdown */
+    .stMarkdown, .stText {
+        color: #334155;
     }
 </style>
 """, unsafe_allow_html=True)

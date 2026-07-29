@@ -46,54 +46,42 @@ st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
+    /* Global styles */
     .stApp {
         font-family: 'Inter', sans-serif;
+        background-color: #f8fafc;
     }
 
-    .student-header {
-        background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    /* Main header */
+    .main-header {
+        background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
         padding: 2rem 2.5rem;
         border-radius: 16px;
         color: white;
         margin-bottom: 2rem;
-        box-shadow: 0 10px 40px rgba(48, 43, 99, 0.4);
-        border: 1px solid rgba(255,255,255,0.05);
+        box-shadow: 0 10px 40px rgba(79, 70, 229, 0.25);
     }
-    .student-header h1 {
-        font-size: 2rem;
+    .main-header h1 {
+        font-size: 2.2rem;
         font-weight: 800;
         margin: 0;
-        background: linear-gradient(135deg, #a8edea, #fed6e3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        letter-spacing: -0.5px;
+        color: #ffffff;
     }
-    .student-header p {
-        font-size: 1rem;
-        opacity: 0.85;
+    .main-header p {
+        font-size: 1.1rem;
+        opacity: 0.95;
         margin-top: 0.5rem;
-        color: #ccd6f6;
+        color: #e0e7ff;
     }
 
-    .stat-card {
-        background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
-        border: 1px solid rgba(255,255,255,0.06);
-        padding: 1.3rem;
+    /* Cards */
+    .metric-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        padding: 1.5rem;
         border-radius: 14px;
         text-align: center;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.12);
-    }
-    .stat-value {
-        font-size: 2rem;
-        font-weight: 800;
-    }
-    .stat-value.good { color: #4ECDC4; }
-    .stat-value.warn { color: #FFE66D; }
-    .stat-value.bad { color: #FF6B6B; }
-    .stat-label {
-        font-size: 0.8rem;
-        color: #8892b0;
-        margin-top: 0.25rem;
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -143,26 +131,27 @@ st.markdown("""
     }
 
     .weak-area {
-        background: rgba(255, 107, 107, 0.08);
-        border-left: 3px solid #FF6B6B;
+        background: #fef2f2;
+        border-left: 3px solid #ef4444;
         padding: 0.6rem 1rem;
         border-radius: 0 8px 8px 0;
         margin-bottom: 0.5rem;
-        color: #ccd6f6;
+        color: #7f1d1d;
         font-size: 0.9rem;
     }
     .strong-area {
-        background: rgba(78, 205, 196, 0.08);
-        border-left: 3px solid #4ECDC4;
+        background: #f0fdf4;
+        border-left: 3px solid #22c55e;
         padding: 0.6rem 1rem;
         border-radius: 0 8px 8px 0;
         margin-bottom: 0.5rem;
-        color: #ccd6f6;
+        color: #14532d;
         font-size: 0.9rem;
     }
 
     section[data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #0a0a1a 0%, #1a1a2e 100%);
+        background-color: #ffffff;
+        border-right: 1px solid #e2e8f0;
     }
 
     #MainMenu {visibility: hidden;}
